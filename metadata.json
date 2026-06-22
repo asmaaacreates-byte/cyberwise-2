@@ -1,0 +1,6 @@
+{
+  "name": "CyberWise Skillversity",
+  "description": "Premium skill development institution and UGC-accredited degree pathways in Perinthalmanna, Kerala. Specializing in AI-Driven Digital Marketing, Videography, E-Commerce, and Spoken English.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
