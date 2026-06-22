@@ -1,4 +1,5 @@
-import { GraduationCap, ArrowRight, MapPin, Phone, Mail } from "lucide-react";
+import { ArrowRight, MapPin, Phone, Mail } from "lucide-react";
+import Logo from "./Logo";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -14,17 +15,7 @@ export default function Footer() {
           {/* Column 1: Institutional Identifier */}
           <div className="md:col-span-4 space-y-5">
             <a href="#home" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-purple to-purple-800 flex items-center justify-center border border-purple-500/30">
-                <GraduationCap className="w-5 h-5 text-white" />
-              </div>
-              <div>
-                <span className="font-display font-bold text-lg tracking-tight text-white block">
-                  CYBER<span className="text-brand-accent">WISE</span>
-                </span>
-                <span className="text-[10px] tracking-[0.2em] uppercase font-semibold text-purple-400 block mt-0.5">
-                  Skillversity
-                </span>
-              </div>
+              <Logo showText={true} />
             </a>
             
             <p className="font-sans text-xs sm:text-sm font-light leading-relaxed text-slate-400">

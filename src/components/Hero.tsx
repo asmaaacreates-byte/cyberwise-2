@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { ArrowRight, Play, Sparkles, Monitor, Camera, Brain, Award, GraduationCap } from "lucide-react";
+import Logo from "./Logo";
 
 interface HeroProps {
   onOpenApplyModal: () => void;
@@ -117,10 +118,10 @@ export default function Hero({ onOpenApplyModal }: HeroProps) {
               
               {/* Core branding shape with glassmorphism */}
               <div className="absolute inset-8 rounded-full bg-brand-purple/10 backdrop-blur-xl border border-brand-purple/30 flex flex-col items-center justify-center p-6 text-center">
-                <GraduationCap className="w-12 h-12 text-brand-accent mb-3 animate-pulse" />
+                <Logo className="w-16 h-16 mb-4 shadow-xl" showText={false} />
                 <span className="font-display font-black text-xl text-white block">CYBERWISE</span>
                 <span className="text-[9px] uppercase tracking-[0.25em] text-purple-400">SKILLVERSITY</span>
-                <div className="w-1.5 h-1.5 rounded-full bg-[#10b981] mt-2 animate-ping" />
+                <div className="w-1.5 h-1.5 rounded-full bg-[#10b981] mt-3 animate-ping" />
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, GraduationCap, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
+import Logo from "./Logo";
 
 interface NavbarProps {
   onOpenApplyModal: () => void;
@@ -41,17 +42,7 @@ export default function Navbar({ onOpenApplyModal }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <a href="#home" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-purple to-purple-800 flex items-center justify-center border border-purple-500/30 group-hover:scale-105 transition-transform duration-300">
-              <GraduationCap className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <span className="font-display font-bold text-lg md:text-xl tracking-tight text-white block leading-none">
-                CYBER<span className="text-brand-accent">WISE</span>
-              </span>
-              <span className="text-[10px] tracking-[0.2em] uppercase font-semibold text-purple-400 block mt-0.5">
-                Skillversity
-              </span>
-            </div>
+            <Logo showText={true} />
           </a>
 
           {/* Desktop Navigation */}
