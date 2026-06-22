@@ -10,7 +10,7 @@ import Admission from "./components/Admission";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ApplyModal from "./components/ApplyModal";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Phone } from "lucide-react";
 
 export default function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -80,6 +80,24 @@ export default function App() {
         onClose={() => setIsModalOpen(false)}
         preselectedCourse={selectedCourse}
       />
+
+      {/* Call Floating Integration */}
+      <a
+        href="tel:+917558026894"
+        id="call-floating-trigger"
+        className="fixed bottom-[88px] right-6 z-50 flex items-center gap-3 group bg-gradient-to-r from-blue-600 to-indigo-600 text-white p-3.5 sm:p-4 rounded-full shadow-2xl shadow-blue-900/40 hover:from-blue-500 hover:to-indigo-500 transition-all duration-300 hover:scale-108 active:scale-95 cursor-pointer"
+        title="Call Admissions Helpline"
+        aria-label="Call Admissions Helpline"
+      >
+        <span className="absolute inset-0 rounded-full bg-blue-500/40 -z-10 animate-ping" />
+        
+        {/* Tooltip Label alongside button */}
+        <span className="max-w-0 overflow-hidden group-hover:max-w-36 transition-all duration-500 ease-out whitespace-nowrap text-xs font-semibold tracking-wide uppercase select-none">
+          Admissions Call
+        </span>
+        
+        <Phone className="w-5 h-5 md:w-6 md:h-6 text-white" />
+      </a>
 
       {/* WhatsApp Floating Integration */}
       <a
